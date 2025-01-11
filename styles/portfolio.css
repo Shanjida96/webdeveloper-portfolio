@@ -1,0 +1,87 @@
+/* MAry and the rest has position difference after applying flex*/
+.open-sans-normal {  
+  /* We can use class name as well. open-sans-normal is the class name*/
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/* We removed the font weight section here as we using default font size and it isn't necessary to mention */
+
+/* shared style */
+.text-primary{
+      color: #FD6E0A;
+}
+.dark-2{
+    color: #474747;
+}
+.btn-primary{
+    background-color: #FD6E0A;
+    font-weight: bold;
+    /* or 700: same thing */
+    color: white;
+    font-size: 20px;
+    padding: 18px 35px;
+    border-radius: 5px;
+    border: none;
+}
+/* header style */
+.header{
+    background-image: url("../images/developer.png"),url('../images/header_bg.png');
+    /* two dots :two space above */
+    background-repeat: no-repeat;
+    background-position: top left ,bottom right;
+    /*  background-position: top left(Developer) bottom right(header) */
+}
+/* Nav styles */
+nav {
+    display: flex;
+    align-items: center; 
+    /* Centers them vertically */
+    justify-content: space-between;
+    /* to give space between children of navbar, h3 and ul */
+    margin: 50px 200px;
+}
+/* To fix Mary and the rest we have to wrk on nav */
+.nav_title{
+    font-weight: 800;
+    /* for extrabold */
+    font-size: 45px;
+}
+nav ul{
+    display: flex;
+    /*The contents in ul are not aligned properly*/
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    /* Removes the dot */
+    margin-right:50px;
+}
+nav li a{
+    text-decoration: none;
+    /* removes the line under the anchor text */
+    font-size: 20px;
+
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px 0 200px;
+}
+.banner-content{
+    max-width: 580px;
+}
+.banner-greetings{
+    font-size: 45px;
+    font-weight: 600;
+
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 85px;
+}
+.banner-profile-pic{
+    width: 580px;
+}
