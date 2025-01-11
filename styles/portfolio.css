@@ -109,6 +109,7 @@ main{
 }
 main section{
     margin-top: 130px;
+    margin-bottom: 130px;
 }
 /*  About section */
 .about{
@@ -136,4 +137,44 @@ main section{
     padding: 104px 30px;
     border-radius: 5px;
     box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+/* resume section styles */
+.resume-container{
+    display: flex;
+}
+.experience-sub-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.experience-description, .experience-sub-title{
+    color: #757575;
+}
+.resume hr{
+    margin: 20px 5px;
+}
+.resume-CV{
+    margin-top: 50px;
+}
+/* footer*/
+footer{
+    padding: 130px 230px;
+    display: flex;
+    gap: 100px;
+}
+.footer-column{
+    width: 50%;
+    /* gives each equal width */
+}
+/* Submit button is input as well . We don't want to style that */
+footer input[type="text"], footer input[type="email"], footer textarea{
+  height: 64px;
+  border-radius: 5px;
+  background-color: white;
+  display: block;
+  /* to make it block */
+  width: 100%;
+  padding: 10px 30px;
+  margin-bottom: 24px;
+  border: none;
 }
